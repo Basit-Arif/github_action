@@ -2,8 +2,8 @@ name: First WorkSpace
 on: [push]
 
 jobs:
- run-shell-commands:
-  runs-on: ubuntu-latest
-  steps:
-  -name: print my name
-   run: echo "my name is basit"
+  run-shell-basit:
+    runs-on: ubuntu-latest
+    steps:
+     -name: print my name
+      run: echo "my name is basit"
