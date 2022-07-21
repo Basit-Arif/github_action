@@ -12,17 +12,18 @@ jobs:
          pwd
          node -v 
          
-     - uses: actions/checkout@v3
-       with:
-         fetch-depth: 0
+
      - name: checkout
-       run: ls
-       
+       run: ls      
      - name: pyhton Command
        run: | 
          import platform
          print(platform.processor())
        shell: python
-     
+     - uses: actions/checkout@v3
+       with:
+         fetch-depth: 0
+     - name: checkout_after
+       run: ls     
 
        
