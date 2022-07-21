@@ -11,8 +11,6 @@ jobs:
        run: |
          pwd
          node -v 
-         
-
      - name: checkout
        run: ls      
      - name: pyhton Command
@@ -24,6 +22,7 @@ jobs:
        with:
          fetch-depth: 0
      - name: checkout_after
-       run: ls     
+       run: | 
+        cat *.txt    
 
        
