@@ -11,11 +11,13 @@ jobs:
        run: |
          pwd
          node -v 
-     - name: checkout    
-       uses: actions/checkout@v3
+         
+     - uses: actions/checkout@v3
        with:
          fetch-depth: 0
-       run: ls 
+     - name: checkout
+       run: ls
+       
      - name: pyhton Command
        run: | 
          import platform
